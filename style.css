@@ -1,0 +1,1022 @@
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: url(fons/e-UkraineHead.woff) format('woff'),
+        url(fons/e-UkraineHead.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url(fons/e-Ukraine.woff) format('woff'),
+        url(fons/e-Ukraine.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'a-Euclid';
+    src: url(fons/a-Euclid.woff) format('woff'),
+        url(fons/a-Euclid.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'a-EuclidBold';
+    src: url(fons/a-EuclidBolt.woff) format('woff'),
+        url(fons/a-EuclidBolt.woff2) format('woff2');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 0.5625rem + 3.4375vw, 4.6875rem);
+}
+
+.header__top-inner {
+    border: clamp(0.04375rem, 0.0273rem + 0.0823vw, 0.125rem) solid #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: clamp(1.25rem, 1rem + 1.25vw, 2.5rem) clamp(2.125rem, 1.6125rem + 2.5625vw, 4.6875rem) 0;
+    min-height: clamp(1.25rem, 0.5625rem + 3.4375vw, 4.6875rem);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header__logo {
+    margin-top: 4px;
+    margin-left: clamp(0.25rem, 0.1994rem + 0.2532vw, 0.5rem);
+}
+
+.header__menu {
+    justify-content: space-between;
+    margin-left: clamp(0rem, -3.1646rem + 15.8228vw, 15.625rem);
+    margin-right: clamp(2.5rem, -0.7911rem + 16.4557vw, 18.75rem);
+    padding-left: clamp(0.25rem, -0.4589rem + 3.5443vw, 3.75rem);
+    flex-grow: 1
+}
+
+.menu__list {
+    color: #2A2A2A;
+    font-family: "a-Euclid";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: clamp(0.375rem, 0.225rem + 0.75vw, 1.125rem);
+}
+.banner--top {
+    position: relative;
+    width: 100%;
+    height: clamp(28.125rem, 22.6875rem + 27.1875vw, 55.3125rem);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.banner__inner {
+    max-width: 1650px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+}
+
+.banner__content {
+    margin-left: 75px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+.banner__all_btn_while {
+    background-color: #FFF;
+    color: #242424;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    margin-left: clamp(0.375rem, 0.0206rem + 1.7722vw, 2.125rem);
+    padding: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem) clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem);
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.banner__all_btn_while svg {
+    width: clamp(0.25rem, 0.1125rem + 0.6875vw, 0.9375rem);
+    height: clamp(0.25rem, 0.1125rem + 0.6875vw, 0.9375rem);
+}
+
+.networks {
+    position: absolute;
+    bottom: clamp(0.3125rem, -1.1432rem + 7.2785vw, 7.5rem);
+    left: clamp(2.125rem, 1.6125rem + 2.5625vw, 4.6875rem);
+    right: clamp(2.125rem, 1.6125rem + 2.5625vw, 4.6875rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-networks {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-networks>* {
+    margin-left: clamp(0.625rem, 0.25rem + 1.875vw, 2.5rem);
+}
+
+.btn-сonference {
+    position: relative;
+    margin-left: auto;
+    margin-right: clamp(0.25rem, -0.6375rem + 4.4375vw, 4.6875rem);
+}
+
+.banner__donat {
+    color: #FFF;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    padding-top: clamp(0.125rem, -0.075rem + 1vw, 1.125rem);
+    padding-bottom: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner__donat svg {
+    width: clamp(0.5rem, 0.4125rem + 0.4375vw, 0.9375rem);
+    height: clamp(0.5rem, 0.4125rem + 0.4375vw, 0.9375rem);
+}
+
+.our-vision__inner {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #6F6F6F;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.missionary {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #6F6F6F;
+    margin: 50px 0 38px;
+}
+
+.vision {
+    justify-content: start;
+    align-items: start;
+    text-align: start
+}
+
+.banner__expanded_btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 100px;
+}
+
+.team__text--inner {
+    display: flex;
+    border-bottom: 2px solid #6F6F6F;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.btn_back,
+.btn_go {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.banner__team-info .swiper-slide {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.swiperr_mySwiper {
+    overflow: hidden;
+}
+
+.swiper_mySwiper {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner__team_project {
+    display: flex;
+
+}
+
+.container_project {
+    padding-left: clamp(1.25rem, -0.6875rem + 9.6875vw, 10.9375rem);
+    padding-bottom: 2px;
+    display: flex;
+    max-width: 100%;
+}
+
+.team-info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.team-info__content img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.position_user {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.user_name {
+    font-weight: 400;
+    color: #242424;
+    font-family: "e-UkraineHead";
+    font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
+}
+
+
+.banner__text--inner {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #6F6F6F;
+    margin-bottom: 50px;
+}
+
+.banner__team_expanded_btn a {
+    font-size: clamp(0.375rem, 0.25rem + 0.625vw, 1rem);
+    margin-right: clamp(0.125rem, -0.1rem + 1.125vw, 1.25rem);
+}
+
+.banner__team_expanded_btn a:last-child {
+    margin-right: 2;
+}
+
+.banner__team_expanded_btn {
+    margin-left: auto;
+    width: min-content;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.project-info__content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project-info__content img {
+    width: 100%;
+    height: auto;
+}
+
+.project__content {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    padding-top: clamp(0.25rem, 0.05rem + 1vw, 1.25rem);
+    padding-bottom: clamp(0.25rem, 0.05rem + 1vw, 1.25rem);
+    padding-left: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+    padding-right: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+}
+
+.icon {
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.icon img {
+    width: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+    height: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+}
+
+.financial_contributions {
+    height: min-content;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+.text_top {
+    margin: 0 0 clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem) clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+    display: flex;
+}
+
+.financial_text_top {
+    padding: clamp(0.625rem, 0.45rem + 0.875vw, 1.5rem);
+    display: flex;
+    white-space: nowrap;
+}
+
+.financial-text_subscription {
+    position: relative;
+    font-family: "e-Ukraine";
+    font-weight: 400;
+    font-size: clamp(0.375rem, 0.175rem + 1vw, 1.375rem);
+}
+
+.financial-text_subscription::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6F6F6F;
+    transition: background-color 0.3s ease;
+}
+
+.financial-text_subscription:hover::after {
+    background-color: #6A00fa;
+}
+
+.financial_text_one_time {
+    position: relative;
+    font-size: clamp(0.375rem, 0.175rem + 1vw, 1.375rem);
+    font-family: "a-EuclidBold";
+    margin-right: clamp(0.25rem, -0.325rem + 2.875vw, 3.125rem);
+    padding-right: 10px;
+}
+
+.financial_text_one_time::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6F6F6F;
+    transition: background-color 0.3s ease;
+}
+
+.financial_text_one_time:hover::after {
+    background-color: #6A00fa;
+}
+
+.one_time {
+    position: relative;
+    font-family: "a-Euclid";
+    font-weight: 400;
+    margin-right: clamp(1.25rem, 0.775rem + 2.375vw, 3.625rem);
+    color: #242424;
+    font-size: clamp(0.375rem, 0.175rem + 1vw, 1.375rem);
+    margin-bottom: clamp(0rem, -0.625rem + 3.125vw, 3.125rem);
+}
+
+.one_time::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6F6F6F;
+    transition: background-color 0.3s ease;
+}
+
+.one_time:hover::after {
+    background-color: #6A00fa;
+}
+
+.subscription {
+    position: relative;
+    font-family: "e-Ukraine";
+    font-size: clamp(0.375rem, 0.225rem + 0.75vw, 1.125rem);
+    font-weight: 400;
+    margin-bottom: clamp(0rem, -0.625rem + 3.125vw, 3.125rem);
+}
+
+.subscription::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6F6F6F;
+    transition: background-color 0.3s ease;
+}
+
+.subscription:hover::after {
+    background-color: #6A00fa;
+}
+
+.money_amount {
+    border-bottom: 2px solid #6F6F6F;
+    display: flex;
+    justify-content: space-between;
+    margin-left: clamp(0.625rem, 0.325rem + 1.5vw, 2.125rem);
+    margin-right: clamp(0.625rem, 0.325rem + 1.5vw, 2.125rem);
+}
+
+.sum {
+    font-family: "a-EuclidBold";
+    color: #242424;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+    margin-right: auto;
+    margin-bottom: 14px;
+}
+
+.currency {
+    font-family: "a-EuclidBold";
+    color: #242424;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+    margin-bottom: 14px;
+}
+
+
+.money {
+    justify-content: space-between;
+    display: flex;
+    margin: clamp(0.25rem, 0.05rem + 1vw, 1.25rem) clamp(0.25rem, -0.2rem + 2.25vw, 2.5rem) clamp(0.25rem, -0.2rem + 2.25vw, 2.5rem);
+}
+
+.money a {
+    font-size: clamp(0.25rem, 0.1rem + 0.75vw, 1rem);
+}
+
+.account_details {
+    margin-left: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.organization {
+    font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
+    font-family: "a-EuclidBold";
+    padding-left: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+    text-align: start;
+    margin-top: clamp(0.375rem, 0.075rem + 1.5vw, 1.875rem);
+    margin-bottom: clamp(0.375rem, 0.075rem + 1.5vw, 1.875rem);
+}
+
+.edrpou {
+    font-family: "e-Ukraine";
+    font-size: clamp(0.375rem, 0.225rem + 0.75vw, 1.125rem);
+    font-weight: 400;
+}
+
+.edr {
+    display: flex;
+    justify-content: start;
+    padding-left: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+}
+
+.score_edrpou {
+    font-size: clamp(0.375rem, 0.225rem + 0.75vw, 1.125rem);
+    font-family: "a-EuclidBold";
+    padding-left: 10px;
+}
+
+.donation_btn {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem) clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem) 30px;
+    border: 2px solid #6F6F6F;
+    border-radius: 50px;
+}
+
+.donation_btn img {
+    width: clamp(0.5rem, 0.425rem + 0.375vw, 0.875rem);
+    height: clamp(0.5rem, 0.425rem + 0.375vw, 0.875rem);
+}
+
+
+.uan,
+.number {
+    font-size: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem);
+    font-family: "a-EuclidBold";
+    padding-left: clamp(0.375rem, 0.2rem + 0.875vw, 1.25rem);
+}
+
+.number {
+    color: #6F6F6F;
+}
+
+
+.column_two {
+    margin-top: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+    margin-left: clamp(0rem, -0.375rem + 1.875vw, 1.875rem);
+    margin-bottom: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+    margin-right: clamp(0.125rem, 0.025rem + 0.5vw, 0.625rem);
+    display: flex;
+}
+
+.column_two img {
+    margin-left: clamp(0.25rem, 0.125rem + 0.625vw, 0.875rem);
+    margin-right: clamp(0.125rem, -0.025rem + 0.75vw, 0.875rem);
+    width: clamp(0.5rem, 0.3rem + 1vw, 1.5rem);
+    height: clamp(0.5rem, 0.3rem + 1vw, 1.5rem);
+}
+
+.btn__text {
+    font-size: clamp(0.3125rem, 0.2rem + 0.5625vw, 0.875rem);
+    font-family: "e-UkraineHead";
+    padding-left: clamp(0.3125rem, 0.125rem + 0.9375vw, 1.25rem);
+    padding-right: clamp(0.3125rem, 0.125rem + 0.9375vw, 1.25rem);
+    padding-top: clamp(0.3125rem, 0.175rem + 0.6875vw, 1rem);
+    padding-bottom: clamp(0.3125rem, 0.175rem + 0.6875vw, 1rem);
+    max-height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__text svg {
+    margin-left: clamp(0.125rem, 0.025rem + 0.5vw, 0.625rem);
+}
+
+.support {
+    font-size: clamp(0.375rem, 0.15rem + 1.125vw, 1.5rem);
+    font-family: "a-Euclid";
+    color: #242424;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 100px;
+    font-weight: 466px;
+    background-color: black;
+    color: floralwhite;
+}
+
+.content__bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+    padding-bottom: clamp(1.25rem, 0.825rem + 2.125vw, 3.375rem);
+}
+
+.footer__left {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.left--top {
+    align-items: center;
+    display: flex;
+    margin-top: clamp(1rem, 0.2rem + 4vw, 5rem);
+}
+
+.accotext {
+    margin-left: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+    margin-right: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+}
+
+.footer__text_left__center {
+    font-family: "e-Ukraine";
+    color: #7B7B7B;
+    margin-top: clamp(0.25rem, 0.05rem + 1vw, 1.25rem);
+    padding-bottom: clamp(0rem, -0.625rem + 3.125vw, 3.125rem);
+    font-size: clamp(0.375rem, 0.275rem + 0.5vw, 0.875rem);
+    line-height: 2;
+}
+
+.footer__networks {
+    margin-top: 20px;
+    margin-bottom: clamp(1.25rem, 0.75rem + 2.5vw, 3.75rem);
+    list-style: none;
+    display: flex;
+}
+
+.footer__networks li {
+    margin-right: clamp(0.625rem, 0.25rem + 1.875vw, 2.5rem);
+}
+
+.footer__privacy-policy {
+    font-family: 'e-Ukraine';
+    font-size: clamp(0.1875rem, 0.05rem + 0.6875vw, 0.875rem);
+    color: #7B7B7B;
+}
+
+.content_left {
+    margin-right: clamp(1.25rem, -1.625rem + 14.375vw, 15.625rem);
+}
+
+.content__top {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.content_right {
+    width: max-content;
+    justify-content: space-between;
+    flex-grow: 1;
+    display: flex;
+    margin-top: 0;
+}
+
+.content_right> li {
+    margin-top: clamp(0rem, -0.8861rem + 4.4304vw, 4.375rem);
+    margin-right: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+}
+
+.logo__link {
+    padding-right: clamp(0.125rem, 0.025rem + 0.5vw, 0.625rem);
+}
+
+.logo__link svg {
+    width: clamp(1rem, 0.5125rem + 2.4375vw, 3.4375rem);
+    height: clamp(1rem, 0.5125rem + 2.4375vw, 3.4375rem);
+}
+
+
+.footer__left--center {
+    font-family: "e-Ukraine";
+    color: #7B7B7B;
+    font-size: clamp(0.1875rem, 0.05rem + 0.6875vw, 0.875rem);
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer__left--bottom {
+    font-family: "e-Ukraine";
+    color: #7B7B7B;
+    font-size: clamp(0.1875rem, 0.05rem + 0.6875vw, 0.875rem);
+    white-space: nowrap;
+}
+
+.content_right {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content_right li {
+    padding-top: 20px; /* Додайте потрібний вам падінг-top */
+}
+
+.go_top {
+    cursor: pointer;
+    margin-top: clamp(-4.375rem, -5rem + 3.125vw, -1.25rem);
+}
+
+.footer__copy {
+    padding-left: 50px;
+    font-family: 'e-Ukraine';
+    font-size: clamp(0.25rem, 0.125rem + 0.625vw, 0.875rem);
+    color: #7B7B7B;
+    margin-left: clamp(-6.25rem, -8.125rem + 9.375vw, 3.125rem);
+}
+
+
+.arrow-up {
+    margin-bottom: 40px;
+}
+
+.top--text {
+    white-space: nowrap;
+    margin-right: 5px;
+    font-size: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem);
+    font-family: "e-UkraineHead";
+}
+
+.banner__vision {
+    margin-bottom: 25px;
+}
+
+.project__title {
+    margin-right: clamp(0rem, -4.375rem + 21.875vw, 21.875rem);
+    font-family: "a-EuclidBold";
+    font-size: clamp(0.40625rem, 0.1875rem + 1.0938vw, 1.5rem);
+}
+
+.btn {
+    border: 1px solid grey;
+    background-color: #FFF;
+    color: #242424;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    padding: 18px 40px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.banner__all_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: clamp(0.25rem, 0.175rem + 0.375vw, 0.625rem);
+    padding: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem) clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem);
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.banner__all_btn svg {
+    width: clamp(0.25rem, 0.1125rem + 0.6875vw, 0.9375rem);
+    height: clamp(0.25rem, 0.1125rem + 0.6875vw, 0.9375rem);
+}
+
+.banner__financial_btn {
+    border: 1px solid grey;
+    color: #242424;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    flex-grow: 1;
+    margin: 0 clamp(0.0625rem, 0.0125rem + 0.25vw, 0.3125rem);
+    padding: clamp(0.25rem, 0.075rem + 0.875vw, 1.125rem);
+    font-weight: 500;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.banner__missionary--movemen {
+    padding-right: clamp(1.25rem, 0.625rem + 3.125vw, 4.375rem);
+    padding-left: clamp(0rem, -0.875rem + 4.375vw, 4.375rem);
+}
+
+.banner__missionary--movemen img {
+    width: clamp(6.25rem, 5rem + 6.25vw, 12.5rem);
+    height: clamp(6.25rem, 5rem + 6.25vw, 12.5rem);
+}
+
+.expanded_btn {
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    padding: clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem) clamp(0.875rem, 0.425rem + 2.25vw, 3.125rem);
+    border-radius: 50px;
+}
+
+.banner__btn {
+    border: 1px solid grey;
+    color: #242424;
+    text-align: center;
+    font-family: "a-Euclid";
+    text-decoration: none;
+    padding: clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem) clamp(0.875rem, 0.425rem + 2.25vw, 3.125rem);
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+
+.btn--violet {
+    color: #FFF;
+    background-color: #6A00fa;
+    font-weight: 400;
+}
+
+
+.title {
+    font-family: "a-Euclid";
+    font-weight: 700;
+}
+
+.title--1 {
+    color: #FFF;
+    text-align: left;
+    font-family: "e-UkraineHead";
+    font-size: clamp(1.25rem, 0.6rem + 3.25vw, 4.5rem);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.container_grid {
+    justify-content: space-between;
+    display: flex;
+}
+.about__info_box{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 40px;
+
+}
+
+.title--7 {
+    min-width: 350px;
+    font-family: "a-Euclid";
+    font-weight: 400;
+    color: #242424;
+    margin-bottom: 2px;
+    font-size: clamp(0.625rem, 0.3465rem + 1.3924vw, 2rem);
+    padding-bottom: clamp(0.125rem, -0.1915rem + 1.5823vw, 1.6875rem);
+}
+.certificate:hover .certificate_text,
+.certificate:hover .text__item,
+.certificate:hover .title--7 {
+    color: #FFF;
+}
+.certificate:hover {
+    background-color: #6A00fa;
+}
+.certificate__column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.certificate {
+    margin: clamp(0.125rem, 0.0237rem + 0.5063vw, 0.625rem);
+    border-radius: clamp(0.625rem, 0.4225rem + 1.0127vw, 1.625rem);
+    height: auto;
+    padding: clamp(0.375rem, 0.0459rem + 1.6456vw, 2rem) clamp(0.375rem, -0.1313rem + 2.5316vw, 2.875rem);
+    border: clamp(0.03125rem, 0.0123rem + 0.0949vw, 0.125rem) solid #6F6F6F;
+    flex: 1;
+}
+.banner__inner_education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner--education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+.title--2 {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-family: "e-Ukraine";
+    font-size: clamp(0.375rem, 0.225rem + 0.75vw, 1.125rem);
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
+.inner_title--2 {
+    margin-bottom: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+    font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+    color: #FFF;
+}
+
+.title--3 {
+    color: #2A2A2A;
+    font-family: "a-Euclid";
+    font-weight: 400;
+    font-size: clamp(1.5rem, 1.05rem + 2.25vw, 3.75rem);
+    padding-right: clamp(0.3125rem, -0.125rem + 2.1875vw, 2.5rem);
+}
+
+.title--4 {
+    font-family: "a-Euclid";
+    font-weight: 400;
+    color: #242424;
+    font-size: clamp(0.875rem, 0.675rem + 1vw, 1.875rem);
+    padding-bottom: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+}
+
+.title--5 {
+    color: #FFF;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+    background-color: #6A00fa;
+    text-decoration: none;
+    padding: 2px clamp(0.5rem, 0.225rem + 1.375vw, 1.875rem);
+    border-radius: 50px;
+}
+
+.title--6 {
+    color: #242424;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+    text-decoration: none;
+    padding: clamp(0.125rem, -0.025rem + 0.75vw, 0.875rem) clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem);
+    font-weight: 300;
+}
+
+.title--8 {
+    color: #6F6F6F;
+    text-align: center;
+    font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+    font-weight: 300;
+    margin: clamp(0.25rem, 0.175rem + 0.375vw, 0.625rem) 0 clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
+}
+
+.our {
+    margin-bottom: 50px;
+}
+
+.team {
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.banner__team {
+    margin-right: auto;
+}
+
+.expanded--btn {
+    margin-left: auto;
+}
+
+.icon_calendar {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.date {
+    color: #7B7B7B;
+    padding-left: clamp(0.125rem, 0.025rem + 0.5vw, 0.625rem);
+    font-size: clamp(0.375rem, 0.275rem + 0.5vw, 0.875rem);
+    font-weight: 300;
+}
+
+.title_text {
+    margin: 100px 0 30px;
+}
+
+.banner__donat--inner {
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account_text {
+    font-family: "a-Euclid";
+    font-size: clamp(0.75rem, 0.525rem + 1.125vw, 1.875rem);
+    margin-top: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+    margin-left: clamp(0.625rem, 0.125rem + 2.5vw, 3.125rem);
+}
+
+@media screen and (max-width: 480px) {
+
+    .header__logo img {
+        width: 25px; 
+        height: 25px; 
+      }
+}
