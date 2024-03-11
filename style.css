@@ -287,6 +287,7 @@ ul {
 }
 
 .user_name {
+    margin-top: 10px;
     font-weight: 400;
     color: #242424;
     font-family: "e-UkraineHead";
@@ -961,7 +962,7 @@ ul {
 
 .title--8 {
     color: #6F6F6F;
-    text-align: center;
+    text-align: left;
     font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
     font-weight: 300;
     margin: clamp(0.25rem, 0.175rem + 0.375vw, 0.625rem) 0 clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem);
