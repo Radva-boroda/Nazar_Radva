@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     function initSwiper() {
       mySwiper = new Swiper('.swiper_mySwiper', {
-        slidesPerView: 3,
+        slidesPerView: 2.8,
         spaceBetween: 20,
         navigation: {
           nextEl: '.btn_go',
